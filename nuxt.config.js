@@ -3,11 +3,11 @@ export default {
   head: {
     title: 'Lijster',
     meta: [
-      {charset: 'utf-8'},
-      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {hid: 'description', name: 'description', content: ''},
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -33,7 +33,7 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
 
-    '@nuxtjs/auth-next'
+    '@nuxtjs/auth-next',
   ],
 
   auth: {
@@ -42,22 +42,22 @@ export default {
         token: {
           property: 'token',
           required: true,
-          type: 'Bearer'
+          type: 'Bearer',
         },
         user: {
           property: 'user',
         },
         endpoints: {
-          login: {url: '/auth/login', method: 'post'},
-          logout: {url: '/auth/logout', method: 'post'},
-          user: {url: '/auth/user', method: 'get'}
-        }
-      }
-    }
+          login: { url: '/auth/login', method: 'post' },
+          logout: { url: '/auth/logout', method: 'post' },
+          user: { url: '/auth/user', method: 'get' },
+        },
+      },
+    },
   },
 
   router: {
-    middleware: ['auth']
+    middleware: ['auth'],
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -67,4 +67,4 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
-};
+}

@@ -5,37 +5,40 @@
     <div class="flex flex-wrap shadow-4 br2 ba b--washed-blue">
       <div class="w-100 bg-white pa4">
         <ul class="mb5">
-          <li v-for="({_id, name, description}, i) in list.items" :key="'item'+i" class="mb3">
-            <strong>{{ name }}</strong><br>
-            <p style="white-space: pre-wrap" v-if="description">{{ description }}</p>
+          <li
+            v-for="({ _id, name, description }, i) in list.items"
+            :key="'item' + i"
+            class="mb3"
+          >
+            <strong>{{ name }}</strong
+            ><br />
+            <p v-if="description" style="white-space: pre-wrap">
+              {{ description }}
+            </p>
           </li>
         </ul>
       </div>
     </div>
-
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import { Context } from '@nuxt/types';
+import Vue from 'vue'
+import { Context } from '@nuxt/types'
 
 export default Vue.extend({
-  name: 'index.vue',
+  name: 'IndexVue',
   auth: false,
-  async asyncData({params, $axios, redirect}: Context) {
-    let list;
+  async asyncData({ params, $axios, redirect }: Context) {
+    let list
     try {
-      list = await $axios.$get(`/lists/public/${params.id}`);
+      list = await $axios.$get(`/lists/public/${params.id}`)
     } catch (e) {
-      redirect('/404');
+      redirect('/404')
     }
-    return {list};
-  }
-
-});
+    return { list }
+  },
+})
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
