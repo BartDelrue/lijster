@@ -163,7 +163,7 @@ export default Vue.extend({
   },
   computed: {
     canShare(): boolean {
-      return process.client && navigator.share && this.list.public
+      return process.client && navigator.share && !!this.list.public
     },
     shareLink(): string {
       if (process.client) {
@@ -196,7 +196,7 @@ export default Vue.extend({
         navigator.share({
           title: this.list.publicName,
           text: this.list.publicUsername + ' wil deze lijst met je delen.',
-          url: this.$route,
+          url: this.shareLink,
         })
           .then(() => console.log('Successful share'))
           .catch((error) => console.log('Error sharing', error));
