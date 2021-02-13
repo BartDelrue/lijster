@@ -1,31 +1,19 @@
 <template>
-  <div
-    class="min-vh-100 bg-washed-green lijster-wrapper ph5-ns pv4-ns flex flex-column"
-  >
-    <div class="bg-washed-blue br3 shadow-4 overflow-hidden flex-grow-1">
-      <header class="bg-near-black white pv2">
-        <nav class="flex flex-wrap mw9 center">
-          <nuxt-link class="ph2 ph4-ns pv3 hover-bg-navy white link" to="/"
-            >Home</nuxt-link
-          >
-          <nuxt-link
-            v-if="this.$auth.loggedIn"
-            class="ph2 white link ph4-ns pv3 hover-bg-navy ml-auto"
-            to=""
-            @click.native="logout"
-          >
+  <div class="min-vh-100 lijster-wrapper white ph5-ns pv4-ns flex flex-column">
+    <div class=" flex-grow-1 content-wrapper">
+      <header class="white shadow">
+        <nav class="flex flex-wrap">
+          <nuxt-link class="ph2 ph4-ns pv3" to="/">Lijster</nuxt-link>
+          <nuxt-link v-if="this.$auth.loggedIn" class="ph2 ph4-ns pv3 ml-auto" to="" @click.native="logout">
             Logout
           </nuxt-link>
-          <nuxt-link
-            v-else
-            class="ph2 white link ph4-ns pv3 hover-bg-navy ml-auto"
-            to="/login"
-            >Login</nuxt-link
-          >
+          <nuxt-link v-else class="ph2 ph4-ns pv3 ml-auto" to="/login">
+            Login
+          </nuxt-link>
         </nav>
       </header>
       <main class="pv5 ph2 ph4-ns mw9 center">
-        <Nuxt />
+        <Nuxt/>
       </main>
       <footer></footer>
     </div>
@@ -45,9 +33,78 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+
+:root {
+  --accent: rgb(253, 19, 197);
+  --accent-trans: rgba(253, 19, 197, .2);
+  --primary: rgb(42, 255, 239);
+  --primary-trans: rgb(42, 255, 239, .2);
+  --body: rgb(5, 16, 57);
+}
+
+body {
+  background: radial-gradient(circle at -52% -47%, #00000021 44%, transparent 44%),
+  radial-gradient(circle at -37% -43%, #00000030 48%, transparent 48%),
+  radial-gradient(circle at 93% -44%, #0000001a 52%, transparent 52%),
+  radial-gradient(var(--body), var(--body));
+}
+
+header {
+  font-variant: small-caps;
+  font-weight: bold;
+
+  a, button {
+    text-decoration: none;
+    transition: text-shadow .2s ease;
+    color: inherit;
+  }
+
+  @media screen and (min-width: 30em) {
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    :first-child::after {
+      border-top-left-radius: 1rem;
+    }
+
+    :last-child::after {
+      border-bottom-right-radius: 1rem;
+    }
+  }
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.min-w-320 {
+  @media screen and (min-width: 30em) {
+    min-width: 320px;
+  }
+}
+
+.button-reset {
+  border: 0;
+  background: none;
+  color: inherit;
+  font-weight: inherit;
+}
+
+.shadow {
+  box-shadow: 0 0 1px 1px var(--accent), 0 0 16px 4px var(--accent-trans);
+}
+
+.shadow--white {
+  box-shadow: 0 0 1px 1px rgba(255, 198, 240, .3), 0 0 12px 4px rgba(194, 237, 254, 0.3);
+}
+
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -58,10 +115,69 @@ html {
 }
 
 .gradient-bg {
-  background-image: linear-gradient(transparent, #f6fffe);
+  background-image: radial-gradient(circle at 100% 100%, rgba(255, 237, 237, 1) 20%, transparent 150%),
+  radial-gradient(circle at 0% 0%, rgba(255, 237, 237, 1) 20%, transparent 150%);
 }
 
-body .lijster-wrapper *:focus {
-  outline: 2px solid black;
+.content-wrapper {
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
+
+.lijster-wrapper * {
+  transition: box-shadow .2s ease-in-out;
+}
+
+body a,
+body button {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    box-shadow: 0 0 1px 1px var(--primary), 0 0 16px 4px var(--primary-trans);
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &:focus,
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.vr-r {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    box-shadow: 0 0 1px 1px var(--primary), 0 0 16px 4px var(--primary-trans);
+  }
+}
+
+.vr-l {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 1px 1px var(--primary), 0 0 16px 4px var(--primary-trans);
+  }
+}
+
 </style>

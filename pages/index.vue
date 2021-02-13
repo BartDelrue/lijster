@@ -4,16 +4,16 @@
       <h1 class="f-headline">Lijster</h1>
     </div>
     <div v-else>
-      <h1 class="f-headline">Welkom terug</h1>
-      <h2 class="f1 mb4">Jouw lijstjes</h2>
+      <h1 class="f-headline-ns">Welkom terug</h1>
+      <h2 class="f1-ns mb4">Jouw lijstjes</h2>
       <ul class="list pa0 flex flex-wrap">
         <li
           v-for="(l, index) in lists"
           :key="'l' + index"
-          class="pa3 mb4 w-33-l w-50-m w-100"
+          class="pa3 w-33-l w-auto-m flex-grow-1 w-100 min-w-320"
         >
-          <div class="pb4 bb mb4 h5 overflow-hidden pa2 relative">
-            <h3 class="f3 mb3 underline">
+          <div class="pb4 bb h5 dark-gray gradient-bg  pa4 relative shadow--white">
+            <h3 class="f3 mb3 mt0 small-caps">
               {{ l.name }}
             </h3>
             <ul class="list pl2">
@@ -29,7 +29,7 @@
 
             <nuxt-link
               :to="{ name: 'list-id', params: { id: l._id } }"
-              class="top-0 pr3 f6 tr ma1 bottom-0 left-0 right-0 absolute gradient-bg link b near-black"
+              class="top-0 pr3 f6 tr  bottom-0 left-0 right-0 absolute link b near-black"
             >
               <span class="absolute bottom-0 left-0 right-0 mb2 mr3">
                 bekijk deze lijst

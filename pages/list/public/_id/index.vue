@@ -1,9 +1,9 @@
 <template>
   <div>
     <h1 class="f-headline mb2">{{ list.publicName }}</h1>
-    <p class="ttu dark-gray tracked mt4">{{ list.publicUsername }}</p>
-    <div class="flex flex-wrap shadow-4 br2 ba b--washed-blue">
-      <div class="w-100 bg-white pa4">
+    <p class="ttu tracked mt4 mb4">{{ list.publicUsername }}</p>
+    <div class="flex flex-wrap shadow--white">
+      <div class="w-100  pa4">
         <ul class="mb5">
           <li
             v-for="({ _id, name, description }, i) in list.items"
