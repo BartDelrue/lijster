@@ -12,7 +12,9 @@
           :key="'l' + index"
           class="pa3 w-33-l w-auto-m flex-grow-1 w-100 min-w-320"
         >
-          <div class="pb4 bb h5 dark-gray gradient-bg  pa4 relative shadow--white">
+          <div
+            class="pb4 bb h5 dark-gray gradient-bg pa4 relative shadow--white"
+          >
             <h3 class="f3 mb3 mt0 small-caps">
               {{ l.name }}
             </h3>
@@ -29,7 +31,7 @@
 
             <nuxt-link
               :to="{ name: 'list-id', params: { id: l._id } }"
-              class="top-0 pr3 f6 tr  bottom-0 left-0 right-0 absolute link b near-black"
+              class="top-0 pr3 f6 tr bottom-0 left-0 right-0 absolute link b near-black"
             >
               <span class="absolute bottom-0 left-0 right-0 mb2 mr3">
                 bekijk deze lijst

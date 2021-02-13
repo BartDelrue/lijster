@@ -3,7 +3,7 @@
     <h1 class="f-headline mb2">{{ list.publicName }}</h1>
     <p class="ttu tracked mt4 mb4">{{ list.publicUsername }}</p>
     <div class="flex flex-wrap shadow--white">
-      <div class="w-100  pa4">
+      <div class="w-100 pa4">
         <ul class="mb5">
           <li
             v-for="({ _id, name, description }, i) in list.items"
