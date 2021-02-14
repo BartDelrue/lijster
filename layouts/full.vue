@@ -3,6 +3,30 @@
     <div class="flex-grow-1 content-wrapper">
       <header class="white shadow">
         <nav class="flex flex-wrap">
+          <nuxt-link class="pr2 pl1 pr4-ns pl3-ns pv3" to="/">
+            <svg
+              class="v-mid pr1"
+              width="2em"
+              height="1em"
+              version="1.1"
+              viewBox="0 0 119.6 69.849"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g transform="translate(167.13 -160.01)" fill="none">
+                <path
+                  stroke-width=".4em"
+                  d="m-161.56 214.08s11.424-20.165 48.843-32.189c37.419-12.024 65.105-4.6876 65.105-4.6876"
+                  stroke="rgb(253, 19, 197)"
+                />
+                <path
+                  stroke-width=".3em"
+                  d="m-166.47 190.89c-6.4023-2.8822 84.805 56.856 106.83 2.3998 6.4028-15.833 3.8126-33.373-16.217-32.935-12.285 0.26842-13.201 8.4387-16.582 16.036-3.3804 7.597-21.493 53.35-21.493 53.35"
+                  stroke="rgb(42, 255, 239)"
+                />
+              </g>
+            </svg>
+            Lijster</nuxt-link
+          >
           <button
             :aria-expanded="menuCollapsed ? 'false' : 'true'"
             aria-controls="sidenav"
@@ -29,8 +53,6 @@
             </svg>
             Menu
           </button>
-          <nuxt-link class="ph2 ph4-ns pv3" to="/">Lijster</nuxt-link>
-
           <nuxt-link
             v-if="this.$auth.loggedIn"
             class="ph2 ph4-ns pv3 ml-auto"
