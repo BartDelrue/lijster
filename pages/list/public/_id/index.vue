@@ -6,7 +6,7 @@
       <div class="w-100 pa4">
         <ul class="mb5">
           <li
-            v-for="({ _id, name, description }, i) in list.items"
+            v-for="({ name, description }, i) in list.items"
             :key="'item' + i"
             class="mb3"
           >
