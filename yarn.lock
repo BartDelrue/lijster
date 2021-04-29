@@ -1495,10 +1495,10 @@
     webpack-node-externals "^2.5.2"
     webpackbar "^4.0.0"
 
-"@nuxtjs/auth-next@5.0.0-1617968180.f699074":
-  version "5.0.0-1617968180.f699074"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/auth-next/-/auth-next-5.0.0-1617968180.f699074.tgz#388c1119968c4c6f2a533b591a86c34c2888ce1b"
-  integrity sha512-pzL1Ifm8mUtTQ/7uvnn3uY2pXVmetnRj/w8JkBK5v1rfpSQ54MDj3a/WUHdgnJ9vrlHWEEMHbJmTSo5wjeGCNA==
+"@nuxtjs/auth-next@5.0.0-1618898588.9655d0e":
+  version "5.0.0-1618898588.9655d0e"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/auth-next/-/auth-next-5.0.0-1618898588.9655d0e.tgz#93bc9592cd983621e13085d3cad32118c96571bd"
+  integrity sha512-0dfz5pgDUiDaDOP7/BlEkycJ5nERbq4ED9GAX+cz5TWhKPmS6LMfta0pWPFY4Buk3SjzBXcy+Qto+VY7ErxAPA==
   dependencies:
     "@nuxtjs/axios" "^5.13.0"
     axios "^0.21.1"
@@ -3759,10 +3759,10 @@ core-js@^2.4.0, core-js@^2.6.5:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
-core-js@^3.9.1:
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.10.1.tgz#e683963978b6806dcc6c0a4a8bd4ab0bdaf3f21a"
-  integrity sha512-pwCxEXnj27XG47mu7SXAwhLP3L5CrlvCB91ANUkIz40P27kUcvNfSdvyZJ9CLHiVoKSp+TTChMQMSKQEH/IQxA==
+core-js@^3.11.1:
+  version "3.11.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.11.1.tgz#f920392bf8ed63a0ec8e4e729857bfa3d121c525"
+  integrity sha512-k93Isqg7e4txZWMGNYwevZL9MiogLk8pd1PtwrmFmi8IBq4GXqUaVW/a33Llt6amSI36uSjd0GWwc9pTT9ALlQ==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -4605,10 +4605,10 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-prettier@^8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.1.0.tgz#4ef1eaf97afe5176e6a75ddfb57c335121abc5a6"
-  integrity sha512-oKMhGv3ihGbCIimCAjqkdzx2Q+jthoqnXSP+d86M9tptwugycmTFdVR4IpLgq2c4SHifbwO90z2fQ8/Aio73yw==
+eslint-config-prettier@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.3.0.tgz#f7471b20b6fe8a9a9254cc684454202886a2dd7a"
+  integrity sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==
 
 eslint-config-standard@^16.0.2:
   version "16.0.2"
@@ -4686,10 +4686,10 @@ eslint-plugin-nuxt@^2.0.0:
     semver "^7.3.2"
     vue-eslint-parser "^7.1.1"
 
-eslint-plugin-prettier@^3.1.4:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.3.1.tgz#7079cfa2497078905011e6f82e8dd8453d1371b7"
-  integrity sha512-Rq3jkcFY8RYeQLgk2cCwuc0P7SEFwDravPhsJZOQ5N4YI4DSg50NyqJ/9gdZHzQlHf8MvafSesbNJCcP/FF6pQ==
+eslint-plugin-prettier@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.4.0.tgz#cdbad3bf1dbd2b177e9825737fe63b476a08f0c7"
+  integrity sha512-UDK6rJT6INSfcOo545jiaOwB701uAIt2/dR7WnFQoGCVl1/EMqdANBmwUaqqQ45aXprsTGzSa39LI1PyuRBxxw==
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
@@ -10885,10 +10885,10 @@ trim-newlines@^1.0.0:
   dependencies:
     glob "^7.1.2"
 
-ts-jest@^26.5.2:
-  version "26.5.4"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.5.4.tgz#207f4c114812a9c6d5746dd4d1cdf899eafc9686"
-  integrity sha512-I5Qsddo+VTm94SukBJ4cPimOoFZsYTeElR2xy6H2TOVs+NsvgYglW8KuQgKoApOKuaU/Ix/vrF9ebFZlb5D2Pg==
+ts-jest@^26.5.5:
+  version "26.5.5"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.5.5.tgz#e40481b6ee4dd162626ba481a2be05fa57160ea5"
+  integrity sha512-7tP4m+silwt1NHqzNRAPjW1BswnAhopTdc2K3HEkRZjF0ZG2F/e/ypVH0xiZIMfItFtD3CX0XFbwPzp9fIEUVg==
   dependencies:
     bs-logger "0.x"
     buffer-from "1.x"
