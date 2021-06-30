@@ -74,7 +74,20 @@
             class="mb3 b--near-black"
           ></textarea>
           <button
-            class="f6 bg-dark-green hover-bg-green white b ba b--green shadow-1 bw1 ph3 pv2 mb2"
+            class="
+              f6
+              bg-dark-green
+              hover-bg-green
+              white
+              b
+              ba
+              b--green
+              shadow-1
+              bw1
+              ph3
+              pv2
+              mb2
+            "
             type="submit"
           >
             Verstuur
@@ -127,7 +140,20 @@
               type="text"
             />
             <button
-              class="f6 bg-dark-green hover-bg-green white b ba b--green shadow-1 bw1 ph3 pv2 mb2"
+              class="
+                f6
+                bg-dark-green
+                hover-bg-green
+                white
+                b
+                ba
+                b--green
+                shadow-1
+                bw1
+                ph3
+                pv2
+                mb2
+              "
               type="submit"
             >
               Verstuur

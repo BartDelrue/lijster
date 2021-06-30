@@ -54,7 +54,7 @@
             Menu
           </button>
           <nuxt-link
-            v-if="this.$auth.loggedIn"
+            v-if="$auth.loggedIn"
             class="ph2 ph4-ns pv3 ml-auto"
             to=""
             @click.native="logout"

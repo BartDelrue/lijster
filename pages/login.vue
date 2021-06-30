@@ -20,7 +20,20 @@
 
     <button
       type="submit"
-      class="f6 bg-dark-green hover-bg-green white b ba b--green shadow-1 bw1 ph3 pv2 mb2"
+      class="
+        f6
+        bg-dark-green
+        hover-bg-green
+        white
+        b
+        ba
+        b--green
+        shadow-1
+        bw1
+        ph3
+        pv2
+        mb2
+      "
     >
       Send
     </button>

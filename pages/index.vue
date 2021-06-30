@@ -31,7 +31,19 @@
 
             <nuxt-link
               :to="{ name: 'list-id', params: { id: l._id } }"
-              class="top-0 pr3 f6 tr bottom-0 left-0 right-0 absolute link b near-black"
+              class="
+                top-0
+                pr3
+                f6
+                tr
+                bottom-0
+                left-0
+                right-0
+                absolute
+                link
+                b
+                near-black
+              "
             >
               <span class="absolute bottom-0 left-0 right-0 mb2 mr3">
                 bekijk deze lijst
@@ -57,7 +69,21 @@
           />
         </div>
         <button
-          class="h2 mt3 f6 bg-dark-green hover-bg-green white b ba b--green shadow-1 bw1 ph3 pv2"
+          class="
+            h2
+            mt3
+            f6
+            bg-dark-green
+            hover-bg-green
+            white
+            b
+            ba
+            b--green
+            shadow-1
+            bw1
+            ph3
+            pv2
+          "
           type="submit"
         >
           Verstuur
